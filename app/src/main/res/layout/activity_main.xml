@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.backflippedstudios.bluelight.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="416dp"
+        android:layout_height="501dp"
+        tools:layout_editor_absoluteX="-26dp"
+        tools:layout_editor_absoluteY="5dp">
+
+        <Button
+            android:id="@+id/tempButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="43dp"
+            android:layout_marginStart="43dp"
+            android:text="temp"
+            tools:layout_editor_absoluteX="-3dp"
+            tools:layout_editor_absoluteY="97dp"
+            android:layout_alignTop="@+id/btResult"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:id="@+id/lightOff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tempButton"
+            android:layout_alignStart="@+id/tempButton"
+            android:layout_below="@+id/lightOn"
+            android:layout_marginTop="17dp"
+            android:text="lightOff"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="119dp" />
+
+        <TextView
+            android:id="@+id/btResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Result"
+            tools:layout_editor_absoluteX="17dp"
+            tools:layout_editor_absoluteY="193dp"
+            android:layout_marginLeft="33dp"
+            android:layout_marginStart="33dp"
+            android:layout_below="@+id/blink"
+            android:layout_toRightOf="@+id/fadeInOut"
+            android:layout_toEndOf="@+id/fadeInOut"
+            android:layout_marginTop="11dp" />
+
+        <Button
+            android:id="@+id/lightOn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/lightOff"
+            android:layout_alignRight="@+id/lightOff"
+            android:layout_below="@+id/textView2"
+            android:layout_marginTop="20dp"
+            android:text="Light On"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="71dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/tempButton"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/tempButton"
+            android:text="Hello World!"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.142"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.692" />
+
+        <Button
+            android:id="@+id/fadeInOut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fade In/out"
+            android:layout_below="@+id/lightOff"
+            android:layout_alignLeft="@+id/lightOn"
+            android:layout_alignStart="@+id/lightOn"
+            android:layout_marginTop="13dp" />
+
+        <Button
+            android:id="@+id/blink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Blink"
+            android:layout_centerVertical="true"
+            android:layout_alignLeft="@+id/fadeInOut"
+            android:layout_alignStart="@+id/fadeInOut" />
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Status"
+            android:layout_below="@+id/tempButton"
+            android:layout_alignLeft="@+id/btResult"
+            android:layout_alignStart="@+id/btResult"
+            android:layout_marginTop="11dp" />
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
